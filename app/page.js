@@ -102,14 +102,14 @@ export default function Home() {
   };
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 20px' }}>
+    <div className="main-container">
       
       <header style={{ textAlign: 'center', marginBottom: '40px' }} className="animate-fade-in">
-        <h1 className="text-gradient" style={{ fontSize: '3rem', marginBottom: '10px' }}>Homework-Breaker</h1>
+        <h1 className="text-gradient page-title" style={{ fontSize: '3rem', marginBottom: '10px' }}>Homework-Breaker</h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem' }}>Your intelligent, undercover assignment agent</p>
       </header>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '350px 1fr', gap: '30px' }}>
+      <div className="grid-layout">
         
         {/* Left Column: Settings & Persona */}
         <SettingsPanel 

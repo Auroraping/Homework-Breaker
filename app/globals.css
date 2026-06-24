@@ -162,3 +162,31 @@ select:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-secondary); 
 }
+
+/* Responsive Layout */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    padding: 20px 15px;
+  }
+  .page-title {
+    font-size: 2rem !important;
+  }
+}
